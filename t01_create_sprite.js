@@ -11,8 +11,8 @@ function setup() {
 	console.log("setup: ");
 	cnv = new Canvas(windowWidth, windowHeight);
 
-	sprite = new Sprite(0,0,1,1);
-	sprite.color = 'ccc'
+	sprite = new Sprite(300,300,400,400);
+	sprite.color = 'blue'
 }
 	
 /*******************************************************/
