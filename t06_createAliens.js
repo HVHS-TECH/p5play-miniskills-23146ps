@@ -11,15 +11,10 @@ function setup() {
 	console.log("setup: ");
 	cnv = new Canvas(windowWidth, windowHeight);
 
-	world.gravity.y = 10;
+	//world.gravity.y = 10;
 
-	sprite = new Sprite(width/2,height/2,20);
+	sprite = new Sprite(width/2,height/2,50,);
 	sprite.color = 'blue'
-	sprite.bounciness = 1;
-	sprite.vel.x = 2;
-	sprite.friction = 0;
-	sprite.drag = 0;
-	//platform_1 = new Sprite(500,300,1000,20,'k')
 
 	wallLH  = new Sprite(0, height/2, 8, height, 'k');
 	wallLH.color = 'black';
@@ -29,6 +24,19 @@ function setup() {
 	wallTop.color = 'black'
 	wallBot = new Sprite(width/2, height, width, 8, 'k');
 	wallBot.color = 'black'
+
+	for (i = 0; i < 40; i++) {
+		
+		alien = new Sprite(randNum = random(20, 100), randNum = random(20, 100), 50, 50);
+		
+		alien.vel.x = randNum = random(2, 8);
+		
+		alien.vel.y = randNum = random(2, 8);
+		
+		alien.bounciness = 1;
+		
+		alien.friction = 0;
+	}
 }
 	
 /*******************************************************/
@@ -36,7 +44,6 @@ function setup() {
 /*******************************************************/
 function draw() {
 	background('ccc');
-
 }
 
 /*******************************************************/
