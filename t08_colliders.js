@@ -42,10 +42,6 @@ function setup() {
 		alienGroup.add(alien);
 	}
 
-		function func2Call(alien, sprite) {
-		// Delete the alien which was hit
-		alien.remove();
-	}
 }
 	
 /*******************************************************/
@@ -54,8 +50,12 @@ function setup() {
 function draw() {
 	background('ccc');
 
-	if (alienGroup.collided(sprite)){
-		func2Call()
+	alienGroup.collides(sprite, func2Call)
+
+		function func2Call(alien, sprite) {
+		console.log("alien group colided")
+		// Delete the alien which was hit
+		alien.remove();
 	}
 }
 
