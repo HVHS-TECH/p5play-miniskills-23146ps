@@ -33,6 +33,11 @@ function setup() {
 /*******************************************************/
 function draw() {
 	background('ccc');
+	
+	//sprite.moveTowards(mouseX, mouseY, 10);
+	if (mouse.pressing()) {
+		sprite.moveTo(mouseX, mouseY, 10);
+	}
 
 }
 
