@@ -1,33 +1,22 @@
 /*******************************************************/
-// P5.play: t01_create_sprite
-// Create a sprite
-/// Written by ???
+// P5.play: t50_extension
+// Extension tasks
+// Written by ??
 /*******************************************************/
-
+	
 /*******************************************************/
 // setup()
 /*******************************************************/
 function setup() {
 	console.log("setup: ");
-	cnv = new Canvas(windowWidth, windowHeight);
-
-	for (var i = 0; i < 10; i++) {
-		var spriteHeight = i * 80 + 40
-		spriteColor = color(random(255), random(255), random(255))
-
-		for (var i2 = 0; i2 < 10; i2++) {
-			var block = new Sprite(i2 * 80 + 40, spriteHeight, 50, 50);
-			block.color = spriteColor;
-		}
-	}
 
 }
-
+	
 /*******************************************************/
 // draw()
 /*******************************************************/
 function draw() {
-	background('ccc');
+	
 }
 
 /*******************************************************/

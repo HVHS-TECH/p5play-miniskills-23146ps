@@ -35,14 +35,14 @@ function draw() {
 	background('ccc');
 	
 	//sprite.moveTowards(mouseX, mouseY, 10);
-	if (kb.presses('left')) {
-		sprite.vel.x -= 5;
-		sprite.drag = 0;
-		sprite.friction = 0;
-	} else if (kb.presses('right')){
-		sprite.vel.x += 5;
-		sprite.drag = 0;
-		sprite.friction = 0;
+	if (kb.pressing('left')) {
+		sprite.vel.x = -5;
+		//sprite.drag = 0;
+		//sprite.friction = 0;
+	} else if (kb.pressing('right')){
+		sprite.vel.x = 5;
+		//sprite.drag = 0;
+		//sprite.friction = 0;
 	} else if (kb.presses('up')){
 		sprite.vel.y -= 10;
 	}
